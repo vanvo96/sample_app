@@ -42,4 +42,18 @@ en:
       page: "contact pages"
   helper:
     hello: "Hello world"
-  base_title: "Ruby on Rails Tutorial Sample App"
+    base_title: "Ruby on Rails Tutorial Sample App"
+
+  layouts:
+    footer:
+      about: "About"
+      contact: "Contact"
+      new: "News"
+    header:
+      home: "Home"
+      help: "Help"
+      login: "Login"
+  users:
+    new:
+      title: "Sign up"
+
