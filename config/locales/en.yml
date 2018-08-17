@@ -34,6 +34,7 @@ en:
     home:
       title: "Sample App"
       book: "Ruby on Rails Tutorial"
+      signup: "Sign up now!"
     help:
       title: "Help"
       help: "Rails Tutorial help section"
