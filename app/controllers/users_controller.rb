@@ -1,9 +1,8 @@
 class UsersController < ApplicationController
-
   def show
     @user = User.find_by id: params[:id]
     return if @user.present?
-    render html: "Empty Record"
+    render html: (t "controller.user.show.empty")
   end
 
   def new
