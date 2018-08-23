@@ -13,6 +13,15 @@ module SampleApp
     config.i18n.load_path += Dir[Rails.root.join("config", "locales", "**", "*.{rb,yml}")]
     I18n.available_locales = [:en, :vi]
     config.i18n.default_locale = :en
+
+    # chapter 8
+    # application.rb
+    # config.session_store :cookie_store
+    # config.middleware.use ActionDispatch::Cookies
+    # config.middleware.use ActionDispatch::Session::CookieStore,
+    #     config.session_options
+    # config.middleware.use Rack::MethodOverride
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
