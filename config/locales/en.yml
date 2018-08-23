@@ -58,3 +58,8 @@ en:
     new:
       title: "Sign up"
 
+  controller:
+    user:
+      create:
+        flash: "Welcome to the Sample App!"
+
