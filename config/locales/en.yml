@@ -68,3 +68,5 @@ en:
         flash: "Welcome to the Sample App!"
       show:
         empty: "Empty Record"
+      update:
+        flash: "Profile updated"
