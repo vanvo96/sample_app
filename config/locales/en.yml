@@ -62,9 +62,23 @@ en:
     sess:
       create:
         flash: "Invalid email/password combination"
+        mess1: "Account not activated.Check your email for the activation link."
 
     user:
       create:
         flash: "Welcome to the Sample App!"
+        info: "Please check your email to activate your account."
       show:
         empty: "Empty Record"
+      update:
+        flash: "Profile updated"
+      destroy:
+        success: "User deleted"
+        danger: "Not successfully"
+      login_user:
+        danger: "Please log in."
+
+    account:
+      edit:
+        success: "Account activated!"
+        danger: "Invalid activation link"

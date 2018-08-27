@@ -4,9 +4,15 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by email: params[:session][:email].downcase
     if user&.authenticate(params[:session][:password])
-      log_in user
-      params[:session][:remember_me] == Setting.controll.session.create.prams ? remember(user) : forget(user)
-      redirect_to user
+      if user.activated?
+        log_in user
+        params[:session][:remember_me] == Setting.controll.session.create.prams ? remember(user) : forget(user)
+        redirect_back_or user
+      else
+        message = t "controller.sess.create.mess"
+        flash[:warning] = message
+        redirect_to root_url
+      end
     else
       flash.now[:danger] = t "controller.sess.create.flash"
       render :new
